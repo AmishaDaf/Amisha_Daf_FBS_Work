@@ -1,0 +1,1 @@
+# 6. Write a program to print first n prime numbers.
