@@ -1,1 +1,0 @@
-# 8. Write a program find reverse of a number

@@ -1,0 +1,1 @@
+# 10. Write a program to remove all occurrences of a given element in the list. 
