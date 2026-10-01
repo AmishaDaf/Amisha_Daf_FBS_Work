@@ -2,21 +2,15 @@
 # not. Also tell how many times it is present in the list.
 
 
+li = [10, 20, 30, 40, 20, 50, 20, 10]
+n = int(input('Enter Element to search: '))
+size = len(li)
+count = 0
+for ind in range(0, size):
+    if(li[ind] == n):
+        count += 1
+        print('Element found at index: ',ind)
 
-def Search(li, search_ele):
-    size = len(li)
-    for ind in range(0, size):
-        if(li[ind] == search_ele):
-            return ind
-    else:
-        return -1
-
-li = [10, 20, 30, 40, 50, 60, 70]
-n = int(input('Enter element to search: '))
-res = Search(li, n)
-if(res != -1):
-    print(f'Element present at index {res}')
-else:
-    print('Element not found')
-
-# Not Done
+print('Element occurance count: ',count)
+if count == 0:
+    print("Element not found")

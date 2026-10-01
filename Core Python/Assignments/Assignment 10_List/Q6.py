@@ -1,20 +1,23 @@
 # 6. Write a program to remove duplicates from the list.
 
 
-# def Duplicate(li):
-#     size = len(li)
-#     search = li[0]
-#     for ind in range(1, size):
-#         if(li[ind] == search):
-#             return ind, li[end]
-#         search += ind
-#     else:
-#         return -1
+li = [10, 20, 10, 30, 20, 40]
+
+unique = []
 
 
-# li = [10, 20, 30, 40, 20, 10, 60, 10, 70]
-# res = Duplicate(li)
-# if(res != -1):
-#     print(res)
-# else:
-#     print('No duplicate element found')
+for ind in range(0, len(li)):
+    found = 0
+    for j in range(len(unique)):
+        if(li[ind] == unique[j]):
+            found = 1
+            break
+    if (found == 0):
+        unique = unique + [li[ind]]
+
+print('Before duplication: ',li)
+print('After duplication: ',unique)
+
+
+
+
