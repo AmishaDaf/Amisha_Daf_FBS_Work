@@ -1,9 +1,9 @@
-def add(a, b):
-    print(a+b)
-add(10, 20)
-add('Virat', 'Kolhi')
-add(3.14, 9.1)
-add([1,2,3], [4,5,6])
+# def add(a, b):
+#     print(a+b)
+# add(10, 20)
+# add('Virat', 'Kolhi')
+# add(3.14, 9.1)
+# add([1,2,3], [4,5,6])
 
 
 class Time:
@@ -25,4 +25,4 @@ x = Time(1, 2, 3)
 y = Time(3, 4, 5)
 # add(Time[1, 2, 3], Time[3, 4, 5])
 print(x+y)
- 
+
