@@ -1,7 +1,5 @@
 from abc import ABC, abstractmethod
 
-
-# Abstract Parent Class
 class Vehicle(ABC):
 
     def __init__(self, persons):
@@ -12,7 +10,6 @@ class Vehicle(ABC):
         pass
 
 
-# Two Wheeler
 class TwoWheeler(Vehicle):
 
     def calculate_toll(self):
@@ -24,7 +21,6 @@ class TwoWheeler(Vehicle):
         return toll
 
 
-# Three Wheeler
 class ThreeWheeler(Vehicle):
 
     def calculate_toll(self):
@@ -36,7 +32,6 @@ class ThreeWheeler(Vehicle):
         return toll
 
 
-# Four Wheeler
 class FourWheeler(Vehicle):
 
     def calculate_toll(self):
@@ -48,7 +43,6 @@ class FourWheeler(Vehicle):
         return toll
 
 
-# Heavy Vehicle
 class HeavyVehicle(Vehicle):
 
     def calculate_toll(self):
@@ -60,7 +54,6 @@ class HeavyVehicle(Vehicle):
         return toll
 
 
-# Main Module
 while True:
 
     print("\n----- TOLL PLAZA -----")
@@ -98,5 +91,5 @@ while True:
         print("Invalid choice!")
         continue
 
-    # Polymorphic Behaviour
+   
     print("Total Toll Amount: Rs.", v.calculate_toll())
